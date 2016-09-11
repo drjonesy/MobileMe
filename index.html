@@ -1,0 +1,47 @@
+<!-- Develped by Ryan Jones -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mobile Me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="mobile_me_logo.png" id="logo">
+			<p><strong>How it works:</strong><br>Type a word, phrase, or any text in the Custom Text field, then select a Custom Style. <br><em>100 characters max.</em></p>
+		</header>
+		<!-- SPACER --><div class="spacer"></div>
+		<label class="font-default">Custom Text:</label>
+		<textarea type="text" id="inputText" class="block field-app"/></textarea>
+		<!-- SPACER --><div class="spacer"></div>
+		<label class="font-default">Choose Style:</label>
+		<select class="block field-app" id="fontStyle">
+			<option value="default">Default</option>
+		 	<option value="muli" class="font-muli">Muli</option>
+		  	<option value="indie_flower" class="font-indie-flower">Indie Flower</option>
+		  	<option value="lobster" class="font-lobster">Lobster</option>
+		  	<option value="poiret_one" class="font-poiret-one">Poiret One</option>
+		</select>
+
+		<!-- SPACER --><div class="spacer"></div>
+		
+		<div id="textColors" class="block">
+		<label class="font-default">Text Color:</label>
+			<ul>
+				<li><span class="color-block light-grey"></span></li>
+				<li><span class="color-block dark-grey"></span></li>
+				<li><span class="color-block blue-grey"></span></li>
+			</ul>
+		</div>
+
+		<div class="image_placeholder">
+			<p id="displayText" class="font-default"></p>
+		</div>
+	</div> <!-- //END Container -->
+	<!-- JavaScript Functionality -->
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+</body>
+
+</html>
